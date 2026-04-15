@@ -1,0 +1,43 @@
+_wandb:
+    value:
+        cli_version: 0.24.0
+        e:
+            og091ir6h62z5gnjqp2yj1sm5bmkjpft:
+                args:
+                    - --input_artifact
+                    - raw_data.parquet:latest
+                    - --artifact_name
+                    - preprocessed_data.csv
+                    - --artifact_type
+                    - preprocessed_data
+                    - --artifact_description
+                    - Preprocessed data as csv file
+                codePath: preprocess/run.py
+                codePathLocal: run.py
+                cpu_count: 8
+                cpu_count_logical: 16
+                disk:
+                    /:
+                        total: "2160158191616"
+                        used: "427691638784"
+                email: pythontaylortest@gmail.com
+                executable: /home/student/.conda/envs/mlflow-0c0de061eeaefd8cf19694dcf7baac6a336c7f6b/bin/python
+                git:
+                    commit: 2c042b57ca2f0b822a4ffee39ab203683e950151
+                    remote: https://github.com/ArcanaPython/genre_classification.git
+                host: 1f8627ab264d1bf9c1eebb604385cee2bf70f3b1-6798bf6d84-7m8lc
+                memory:
+                    total: "135077654528"
+                os: Linux-6.6.97+-x86_64-with-glibc2.36
+                program: /workspace/genre_classification/preprocess/run.py
+                python: CPython 3.13.13
+                root: /workspace/genre_classification/preprocess
+                startedAt: "2026-04-15T19:33:19.675662Z"
+                writerId: og091ir6h62z5gnjqp2yj1sm5bmkjpft
+        m: []
+        python_version: 3.13.13
+        t:
+            "4": 3.13.13
+            "5": 0.24.0
+            "12": 0.24.0
+            "13": linux-x86_64

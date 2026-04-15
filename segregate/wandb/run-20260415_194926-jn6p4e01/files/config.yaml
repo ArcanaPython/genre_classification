@@ -1,0 +1,53 @@
+_wandb:
+    value:
+        cli_version: 0.24.0
+        e:
+            4ypma1zb7z8rizoonijm9q8zryye582s:
+                args:
+                    - --input_artifact
+                    - preprocessed_data.csv:latest
+                    - --artifact_root
+                    - data
+                    - --artifact_type
+                    - train_test_segregated
+                    - --test_size
+                    - "0.3"
+                    - --random_state
+                    - "42"
+                    - --stratify
+                    - genre
+                codePath: segregate/run.py
+                codePathLocal: run.py
+                cpu_count: 8
+                cpu_count_logical: 16
+                disk:
+                    /:
+                        total: "2160158191616"
+                        used: "428164653056"
+                email: pythontaylortest@gmail.com
+                executable: /home/student/.conda/envs/mlflow-fffcf19dff5f62f9470b9cf95e5eaac3bc5934ff/bin/python
+                git:
+                    commit: 2c042b57ca2f0b822a4ffee39ab203683e950151
+                    remote: https://github.com/ArcanaPython/genre_classification.git
+                host: 1f8627ab264d1bf9c1eebb604385cee2bf70f3b1-6798bf6d84-7m8lc
+                memory:
+                    total: "135077654528"
+                os: Linux-6.6.97+-x86_64-with-glibc2.36
+                program: /workspace/genre_classification/segregate/run.py
+                python: CPython 3.13.13
+                root: /workspace/genre_classification/segregate
+                startedAt: "2026-04-15T19:49:26.777556Z"
+                writerId: 4ypma1zb7z8rizoonijm9q8zryye582s
+        m: []
+        python_version: 3.13.13
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "4": 3.13.13
+            "5": 0.24.0
+            "12": 0.24.0
+            "13": linux-x86_64

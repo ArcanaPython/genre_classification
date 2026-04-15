@@ -1,0 +1,42 @@
+_wandb:
+    value:
+        cli_version: 0.24.0
+        e:
+            7f9t7kemd8g93f5nxw69viw61obm92j5:
+                args:
+                    - -s
+                    - -vv
+                    - .
+                    - --reference_artifact
+                    - exercise_14/preprocessed_data.csv:latest
+                    - --sample_artifact
+                    - preprocessed_data.csv:latest
+                    - --ks_alpha
+                    - "0.05"
+                cpu_count: 8
+                cpu_count_logical: 16
+                disk:
+                    /:
+                        total: "2160158191616"
+                        used: "428018937856"
+                email: pythontaylortest@gmail.com
+                executable: /home/student/.conda/envs/mlflow-cd65784bf8e7fffc45c3ae66d3b5f5d3b28be86d/bin/python3.13
+                git:
+                    commit: 2c042b57ca2f0b822a4ffee39ab203683e950151
+                    remote: https://github.com/ArcanaPython/genre_classification.git
+                host: 1f8627ab264d1bf9c1eebb604385cee2bf70f3b1-6798bf6d84-7m8lc
+                memory:
+                    total: "135077654528"
+                os: Linux-6.6.97+-x86_64-with-glibc2.36
+                program: /home/student/.conda/envs/mlflow-cd65784bf8e7fffc45c3ae66d3b5f5d3b28be86d/bin/pytest
+                python: CPython 3.13.13
+                root: /workspace/genre_classification/check_data
+                startedAt: "2026-04-15T19:35:44.931124Z"
+                writerId: 7f9t7kemd8g93f5nxw69viw61obm92j5
+        m: []
+        python_version: 3.13.13
+        t:
+            "4": 3.13.13
+            "5": 0.24.0
+            "12": 0.24.0
+            "13": linux-x86_64
