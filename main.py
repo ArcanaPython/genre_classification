@@ -73,7 +73,6 @@ def go(config: DictConfig):
                 "artifact_root": "data",
                 "artifact_type": "train_test_segregated",
                 "test_size": config["data"]["test_size"],
-                "random_state": config["main"]["random_seed"],
                 "stratify": config["data"]["stratify"]
             }
         )
@@ -94,7 +93,9 @@ def go(config: DictConfig):
                 "train_data": "data_train.csv:latest",
                 "export_artifact": config["random_forest_pipeline"]["export_artifact"],
                 "model_config": model_config,
-                "stratify": config["data"]["stratify"]
+                "stratify": config["data"]["stratify"], 
+                "random_seed": config["main"]["random_seed"],
+                "val_size": config["data"]["val_size"]
             }
         )
 
@@ -104,7 +105,10 @@ def go(config: DictConfig):
             os.path.join(root_path, "evaluate"),
             "main",
             parameters={
+                #Solution code used 
+                #model_export: f"{config["random_forest_pipeline"]["export_artifact"]}
                 "model_export": "model_export:latest",
+                
                 "test_data": "data_test.csv:latest"
             }
         )
