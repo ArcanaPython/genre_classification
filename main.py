@@ -106,7 +106,7 @@ def go(config: DictConfig):
             "main",
             parameters={
                 #Solution code used 
-                #model_export: f"{config["random_forest_pipeline"]["export_artifact"]}
+                #model_export: f"{config["random_forest_pipeline"]["export_artifact"]}:latest"
                 "model_export": "model_export:latest",
                 
                 "test_data": "data_test.csv:latest"
