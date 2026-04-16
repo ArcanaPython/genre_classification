@@ -1,0 +1,34 @@
+{
+  "os": "Linux-6.6.97+-x86_64-with-glibc2.36",
+  "python": "CPython 3.13.13",
+  "startedAt": "2026-04-16T14:45:45.791451Z",
+  "args": [
+    "--model_export",
+    "model_export:latest",
+    "--test_data",
+    "data_test.csv:latest"
+  ],
+  "program": "/workspace/genre_classification/evaluate/run.py",
+  "codePath": "evaluate/run.py",
+  "codePathLocal": "run.py",
+  "git": {
+    "remote": "https://github.com/ArcanaPython/genre_classification.git",
+    "commit": "ee043c379a7b19fc5e14d300524e7fb6cf5a5a84"
+  },
+  "email": "pythontaylortest@gmail.com",
+  "root": "/workspace/genre_classification/evaluate",
+  "host": "1f8627ab264d1bf9c1eebb604385cee2bf70f3b1-54cd746fc9-sdssp",
+  "executable": "/home/student/.conda/envs/mlflow-20899d9f93a243b3c2d61cb7fff078f5eab98f1b/bin/python",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "2160158191616",
+      "used": "603381452800"
+    }
+  },
+  "memory": {
+    "total": "135077654528"
+  },
+  "writerId": "66g2ay2uuwl1sjshxbghxnaafnearau5"
+}

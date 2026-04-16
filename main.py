@@ -91,15 +91,23 @@ def go(config: DictConfig):
             os.path.join(root_path, "random_forest"),
             "main",
             parameters={
-                "train_data": "data_train.csv"
-                "model_config": model_config
+                "train_data": "data_train.csv:latest",
+                "export_artifact": config["random_forest_pipeline"]["export_artifact"],
+                "model_config": model_config,
+                "stratify": config["data"]["stratify"]
             }
         )
 
     if "evaluate" in steps_to_execute:
-
         ## YOUR CODE HERE: call the evaluate step
-        pass
+        _ = mlflow.run(
+            os.path.join(root_path, "evaluate"),
+            "main",
+            parameters={
+                "model_export": "model_export:latest",
+                "test_data": "data_test.csv:latest"
+            }
+        )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,2 @@
+- main.execute_steps='random_forest'
+- random_forest_pipeline.random_forest.max_depth=6
