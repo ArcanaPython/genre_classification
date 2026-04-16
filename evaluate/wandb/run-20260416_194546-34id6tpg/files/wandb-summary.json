@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":3},"_runtime":3,"confusion_matrix":{"size":95049,"path":"media/images/confusion_matrix_0_c36183c36eaa0cc765d5.png","format":"png","width":1000,"height":1000,"_type":"image-file","sha256":"c36183c36eaa0cc765d50764f774a6f4bda895b731518d7cd92d434d13a8b088"},"_timestamp":1.7763687524404314e+09,"_step":0,"AUC":0.948374317141282}
